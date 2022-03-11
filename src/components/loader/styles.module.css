@@ -1,0 +1,77 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: rotate 0.75s linear infinite;
+  -ms-animation: rotate 0.75s linear infinite;
+}
+
+.secondaryWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #282828;
+}
+
+.secondaryLoader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #240229;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.4),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.secondaryLoader:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: #282828;
+  border-radius: 50%;
+  border: 2px solid #240229;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2), inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.secondaryLoader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(-225deg, #ff7402 0%, #ffe700 50%, #fff55e 100%);
+
+  filter: blur(20px);
+  z-index: -1;
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

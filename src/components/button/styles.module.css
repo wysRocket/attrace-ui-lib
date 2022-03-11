@@ -1,0 +1,26 @@
+.primary {
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 6px;
+  background: var(--primary-gradient);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 24px;
+}
+
+.primary svg {
+  margin-right: 10px;
+}
+
+.secondary {
+  border: 1px solid var(--purpule);
+  border-image-slice: 1;
+  border-width: 1px;
+  /* border-image-source: var(--primary-gradient); */
+  background: transparent;
+  color: var(--white-09);
+  padding: 7px 23px;
+}

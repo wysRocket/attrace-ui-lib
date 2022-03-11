@@ -1,9 +1,9 @@
 {
-  "name": "@yarrgh/component-library",
+  "name": "@attrace/ui-kit",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/yarrgh"
+    "registry": "https://npm.pkg.github.com/attrace"
   },
-  "version": "0.0.4",
+  "version": "0.0.2",
   "description": "A simple react componentt library",
   "keywords": [],
   "scripts": {
@@ -13,11 +13,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/exo-2": "^4.5.4",
+    "@fontsource/inter": "^4.5.4",
+    "@mui/material": "^5.5.0",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "@types/react": "^17.0.35",
+    "classnames": "^2.3.1",
     "esbuild": "^0.14.11",
     "esbuild-node-externals": "^1.4.1",
     "react": "^17.0.2",
     "rimraf": "^3.0.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.5.2"
   },
   "peerDependencies": {

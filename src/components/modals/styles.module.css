@@ -1,0 +1,64 @@
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.modalHeader {
+  justify-content: space-between;
+  padding: 24px 40px 23px;
+  border-bottom: 1px solid var(--dark-blue-02);
+}
+.modalHeader button {
+  background: transparent;
+  border: 0;
+}
+.modalContent {
+  padding: 24px 40px 32px 40px;
+  color: var(--white-07);
+}
+.modalFooter {
+  justify-content: flex-end;
+  padding: 0 40px 32px;
+}
+.modalFooter button:last-child {
+  margin-left: 12px;
+}
+.backBtn {
+  flex-direction: column;
+}
+.backBtn svg {
+  transform: rotate(180deg);
+  margin-right: 20px;
+}
+
+/* media */
+@media (max-width: 768px) {
+  .animateBottom {
+    position: relative;
+    animation: animatebottom 0.4s;
+  }
+  .modalBody {
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  .modalHeader {
+    padding: 24px;
+  }
+  .modalContent,
+  .modalFooter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modalFooter {
+    padding-bottom: 24px;
+  }
+}
