@@ -1,7 +1,7 @@
 {
-  "name": "@attrace/ui-kit",
+  "name": "@wysrocket/attrace-ui-lib",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/attrace"
+    "registry": "https://npm.pkg.github.com/wysRocket"
   },
   "version": "0.0.2",
   "description": "A simple react componentt library",
