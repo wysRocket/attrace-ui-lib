@@ -1,19 +1,18 @@
-import { ReactNode, FC } from 'react';
-import classNames from 'classnames';
+import { ReactNode, FC } from 'react'
+import { cx } from '@emotion/css'
 
-import { Modal, Backdrop, Fade, Typography, Box } from '@mui/material';
+import { Modal, Backdrop, Fade, Typography, Box } from '@mui/material'
+import CloseIcon from 'components/icons/close'
 
-import CloseIcon from 'components/icons/close';
-
-import styles from './styles.module.css';
+import styles from './styles.module.css'
 
 interface Props {
-  open: boolean;
-  title?: string | ReactNode;
-  footer?: JSX.Element;
-  children: ReactNode;
-  onClose?: () => void;
-  classNameBody?: string;
+  open: boolean
+  title?: string | ReactNode
+  footer?: JSX.Element
+  children: ReactNode
+  onClose?: () => void
+  classNameBody?: string
 }
 
 const style = {
@@ -28,7 +27,7 @@ const style = {
   bgcolor: ' #1F1C29',
   border: '1px solid rgba(255, 255, 255, 0.1)',
   borderRadius: 10,
-};
+}
 
 const TransitionsModal: FC<Props> = ({ open, title, footer, children, onClose, classNameBody }) => (
   <Modal
@@ -43,7 +42,7 @@ const TransitionsModal: FC<Props> = ({ open, title, footer, children, onClose, c
   >
     <Fade in={open}>
       <Box sx={style}>
-        <div className={classNames(styles.modalBody, classNameBody, styles.animateBottom)}>
+        <div className={cx(styles.modalBody, classNameBody, styles.animateBottom)}>
           <div className={`flex-space-between ${styles.modalHeader}`}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
               {title}
@@ -60,6 +59,6 @@ const TransitionsModal: FC<Props> = ({ open, title, footer, children, onClose, c
       </Box>
     </Fade>
   </Modal>
-);
+)
 
-export default TransitionsModal;
+export default TransitionsModal

@@ -1,0 +1,53 @@
+.tab {
+  font-family: IBM Plex Sans, sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: transparent;
+  width: 100%;
+  padding: 12px 16px;
+  margin: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.tab:hover {
+  background-color: blue;
+}
+
+.tab:focus {
+  color: #fff;
+  border-radius: 3px;
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+.tab .selected {
+  background-color: blue;
+  color: blue;
+}
+
+.tab .disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tabPanel {
+  width: 100%;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 0.875rem;
+}
+
+.tabsList {
+  min-width: 320px;
+  background-color: blue;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}

@@ -1,0 +1,7 @@
+export { default as ArrowUp } from './arrowUp'
+export { default as ArrowDown } from './arrowDown'
+export { default as ArrowRight } from './arrowRight'
+export { default as ArrowLeft } from './arrowLeft'
+export { default as CloseIcon } from './close'
+export { default as SponsorIcon } from './sponsorIcon'
+export { default as WalletIcon } from './wallet'
