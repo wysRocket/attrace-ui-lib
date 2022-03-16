@@ -1,14 +1,9 @@
 #!/bin/bash
 
-echo "Connecting local attrace-ui-lib 🚀 =\c"
+echo "Connecting local attrace-ui-kit 🚀 =\c"
 
 THIRD_PARTY_LINKS=(
-  react
-  
-  @emotion/react
-  @emotion/styled
-  @emotion/css  
-  @mui/material
+  @wysrocket/attrace-ui-lib
 )
 
 for i in "${THIRD_PARTY_LINKS[@]}"
@@ -20,7 +15,7 @@ do
 done
 
 {
-  cd ../attrace-ui-lib
+  cd ../attrace-ui-kit
   yarn unlink || true
   yarn link
 } &> /dev/null

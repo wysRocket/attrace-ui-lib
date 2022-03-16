@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 const WalletIcon: FC = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,6 +11,6 @@ const WalletIcon: FC = () => (
       fill="white"
     />
   </svg>
-);
+)
 
-export default WalletIcon;
+export default WalletIcon
