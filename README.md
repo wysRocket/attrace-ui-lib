@@ -63,7 +63,7 @@ Your .npmrc file should look similar to this:
 ~/.npmrc
 registry=https://registry.npmjs.org/
 @wysrocket:registry=https://npm.pkg.github.com/
-//npm.pkg.github.com/:_authToken=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
+//npm.pkg.github.com/:_authToken=
 ```
 Now, in the root of your project, run the following command to publish your package:
 
