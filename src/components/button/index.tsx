@@ -25,13 +25,7 @@ const Button: FC<Props> = ({
   const $size = buttonSizes[size] || {}
 
   return (
-    <button
-      className={css([btnClass, $size])}
-      onClick={onClick}
-      style={style}
-      type="button"
-      {...rest}
-    >
+    <button className={css([btnClass, $size])} onClick={onClick} style={style} type="button" {...rest}>
       {children}
     </button>
   )

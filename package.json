@@ -1,15 +1,23 @@
 {
-  "name": "@wysrocket/attrace-ui-lib",
+  "name": "@attrace/ui-kit",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/wysRocket"
+    "registry": "https://npm.pkg.github.com/attrace"
   },
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "A simple react componentt library",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "scripts"
+  ],
+  "types": "dist/index.d.ts",
   "keywords": [],
   "scripts": {
     "ts-types": "tsc --emitDeclarationOnly --outDir dist",
     "build": "rimraf dist && node ./esbuild.mjs && yarn ts-types && cp -r scripts dist/scripts",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "publish": "yarn publish"
   },
   "author": "",
   "license": "ISC",
@@ -38,11 +46,5 @@
     "@mui/base": "^5.0.0-alpha.71",
     "@mui/material": "^5.5.0",
     "react": "^17.0.2"
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts"
+  }
 }
