@@ -1,6 +1,6 @@
 export { default as Button } from './button'
 export { default as Loader } from './loader'
-export { default as Modal } from './modals'
+export { default as Modal } from './modal'
 export { default as Select } from './select'
 export * from './icons'
 export { default as Loadable } from './Loadable'
