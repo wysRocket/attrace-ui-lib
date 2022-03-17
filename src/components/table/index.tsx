@@ -41,7 +41,8 @@ export default function UnstyledTable(rows: Props[]) {
           </thead>
           <tbody>
             {(rowsPerPage > 0 ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage) : rows).map(
-              ({ assetInfo: { fullName = '' }, ...row }, indexRow) =>
+              // @ts-ignore
+              ({ assetInfo: { fullName }, ...row }, indexRow) =>
                 fullName && (
                   <tr key={`${fullName}-${indexRow}`}>
                     <td>{row.asset}</td>
