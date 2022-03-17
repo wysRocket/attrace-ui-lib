@@ -1,0 +1,22 @@
+.root {
+  width: 500;
+  max-width: '100%';
+}
+
+.root table {
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 0.875rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.root td,
+th {
+  border: 1px solid grey;
+  text-align: left;
+  padding: 6px;
+}
+
+.root th {
+  background-color: grey;
+}
